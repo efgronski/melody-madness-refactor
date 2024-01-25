@@ -1,0 +1,683 @@
+@font-face {
+  font-family: "Graffiti";
+  src: url("font/AttackGraffiti-3zRBM.ttf")
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Comfortaa', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    margin: 0;
+}
+
+body { 
+  background: #eee 
+}
+
+h2.homepage-title{
+  padding: 1rem;
+}
+
+div header {
+  margin: 0;
+  display: flex; 
+  justify-content: center;
+  align-items: flex-start;
+}
+
+div.spotify-player {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 325px;
+  top: 0;
+  right: 0;
+  margin: 1rem;
+  position: fixed;
+}
+
+.container-fluid { 
+  max-width: 100%; 
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+	background: #fff;
+	box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  margin: 2rem;
+  padding: 1rem;
+  display: inline-block;
+  align-items: center;
+}
+
+.card img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: large;
+}
+
+.card-text {
+  font-size: medium;
+}
+
+.row {
+	margin-bottom: 1em;
+  justify-content: center;
+}
+
+.column {
+	background: #efefef;
+	padding-top: .75rem;
+	padding-bottom: .75rem;
+	width: 100%;
+}
+
+header {
+  padding: 1rem;
+  background-image: url("img/background-splash.jpg");
+  height: 400px;
+  text-shadow: 3px 4px #c46d93;
+  text-align: center;
+  background-position: 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-family: 'Graffiti', cursive;
+  letter-spacing: .5rem;
+  padding: 40px 0px;
+  color:#eeeeee;
+  text-align: center;
+  font-size: 150px;
+}
+
+img {
+    border-radius: 50%;
+    border: 4px solid gray;
+}
+
+img.card-img-top {
+  border: 4px solid gray;
+  border-radius: 0%;
+}
+
+footer {
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.playlist-info{
+  background-color: #EA4C89;
+  padding: 1rem;
+}
+
+.playlist-info table{
+  background-color: white;
+}
+
+.playlist-info h2 {
+  text-align: center;
+  color: white;
+}
+
+/* The alert message box */
+.playlist-alert {
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 15px; 
+  color: white;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* CSS */
+.button-1 {
+  background-color: #EA4C89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  width: 100px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #F082AC;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+  font-size: 50px;
+}
+
+.listContainer {
+  font-size: 70%;
+  padding: 0%;
+ 
+
+}
+
+h3 {
+  font-size: 150%;
+  line-height: 3;
+}
+
+.listContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 85%;
+  border: 1px solid rgb(0, 0, 0);
+  margin-left: 50px;
+  margin-bottom: 20px;
+
+  background-color: rgba(173, 216, 230, 0.5); 
+  border: 5px solid lightblue; 
+  padding: 20px;
+  border-radius: 5px;
+  height: 100%;
+}
+
+input[type=text] {
+    height: 50px;
+    width: 200px;
+    margin-bottom: 20px;
+  }
+
+ol > li {
+    list-style-position: inside; 
+}
+
+.search-bar {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    padding: 1rem;
+    height: 25px;
+}
+
+form {
+    width: 500px;
+  	margin-bottom: 20px;
+}
+
+form > input[type=text],
+form > select,
+form > input[type=submit] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form > input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+form > input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+form > label {
+    font-weight: bold;
+    font-size: larger;
+}
+
+div section {
+  padding: 4%;
+}
+
+main div {
+  padding: 4%;
+}
+
+div.start-feat1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem;
+  /* margin-top: 7rem; */
+  padding: 0px;
+  margin: 0px;
+}
+
+div.start-item {
+  text-align: center;
+  display: inline-block;
+  padding: 1.5rem;
+}
+
+div.start-item p {
+  font-size: 250%;
+  /* padding: 50px 2rem; */
+}
+
+div section {
+  font-size: 130%;
+}
+
+.homeContainer {
+  padding: 7%;
+}
+
+h2 {
+  height: 60px;
+}
+
+div.start-item form {
+  width: 100%;
+  padding: 2rem 1rem;
+  height: 100%;
+}
+
+button {
+  transition-duration: 0.4s;
+  display: block;
+  justify-content: center;
+  padding: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  font-size: 250%;
+}
+
+.my-button {
+  font-size: 17px;
+  padding: 10px 10px;
+  margin: 3px;
+  border: 2px solid #333;
+  border-radius: 2%;
+  border-radius: 100px;
+  width: 200px;
+}
+
+button.begin, button.profile{
+  margin-top: 0rem;
+  margin-bottom: 3.2rem;
+
+}
+
+button.restart{
+  margin-top: 3rem;
+}
+
+button:hover {
+  background-color: pink; /* Green */
+  color: white;
+}
+
+button.submitRanks {
+  margin-bottom: 3.2rem;
+  padding-top: 0.75rem;
+  padding-bottom: 2rem;
+  width: 200px;
+  height: 50px;
+}
+
+div.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem;
+  margin-top: 10rem;
+}
+
+div.cards p.vs{
+  font-size: xx-large;
+  margin-top: 40px;
+}
+
+button.card-selection {
+  width: 400px;
+  height: auto;
+}
+
+div.song-card p{
+  margin-top: 2rem;
+}
+
+div.song-card h2{
+  padding-bottom: 1rem;
+  font-size: 100px;
+}
+
+div.final-playlist h2 {
+  text-align: center;
+  padding: 2rem;
+  font-size: xx-large;
+}
+
+table {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+}
+
+th {
+  font-size: xx-large;
+  height: 4rem;
+  text-align: left;
+  color: #AA336A;
+  background-color: #d3d3d3;
+}
+
+td, th {
+  font-size: larger;
+  padding: .5em;
+  border-bottom: 1px solid #d3d3d3
+}
+
+tr:nth-child(2n) {
+  background-color: #eee;
+}
+
+tbody tr:hover {
+  background-color: pink;
+}
+
+div.social-media {
+  margin: 100px 0;
+}
+
+div.social-media a {
+  padding-right: 1rem;
+  text-decoration: none;
+}
+
+.bracket {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.round {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 10px;
+  flex: 1;
+}
+
+.matchup {
+  margin: 15px;
+  border-radius: 5px;
+}
+
+.song {
+  padding: 10px 8px;
+  margin-bottom: 5px;
+}
+
+.song:hover {
+  background-color: pink;
+}
+    
+@media (min-width: 528px) {
+  .search-bar {
+    padding: 5rem;
+    height: 25px;
+  }
+
+  nav div#tabs{
+    width: 100%;
+    display: grid;
+  }
+
+  div.spotify-player {
+    display: none;
+  }
+
+  .row {
+    display: block;
+  }
+
+  h1 {
+    font-size: 50pt;
+  }
+
+  div.song-card h2{
+    padding-bottom: 1rem;
+    font-size: 40px;
+  }
+
+  div.song-card p{
+    padding-bottom: 1rem;
+    font-size: 20px;
+  }
+
+  .submitRanks {
+    font-size: 20px;
+  }
+
+  nav {
+    background-color: pink;
+    display: flex;
+    padding: 1rem;
+  }
+
+  nav div#tabs a {
+    align-items: flex-start;
+    font-size: 25px;
+    margin: 1rem;
+    text-decoration: none;
+    color: #f2f2f2;
+    text-align: center; 
+    border-bottom: 3px solid transparent;
+    }
+    
+  nav div#tabs a:hover {
+    border-bottom: 3px solid #AA336A;
+  }
+    
+  nav div#tabs a.active {
+    border-bottom: 3px solid #AA336A;
+  }
+
+  .search-bar {
+    margin: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .search-bar {
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    padding: 1rem;
+    height: 25px;
+  }
+
+  nav div#tabs{
+    display:flex;
+    flex-direction:row;
+  }
+
+  div.spotify-player {
+    display:inline-block;
+    width: 20%;
+  }
+
+  .row {
+    display: flex;
+  }
+    
+  header {
+    padding: 2rem;
+    height: 300px;
+  }
+
+  h1 {
+    font-size: 120px;
+  }
+
+  div.song-card h2{
+    padding-bottom: 1rem;
+    font-size: 50px;
+  }
+
+  div.song-card p{
+    padding-bottom: 1rem;
+    font-size: 35px;
+  }
+
+  .submitRanks {
+    font-size: 35px;
+  }
+
+  nav div#tabs a {
+    font-size: 20px;
+  }
+
+  div.start-item p {
+    font-size: 200%;
+    padding: 50px 2rem;
+    padding: 0px;
+  }
+
+  button {
+    font-size: 180%;
+  }
+}
+
+@media (min-width: 992px) {
+  header {
+    padding: 2rem;
+    height: 250px;
+  }
+
+  h1 {
+    font-size: 100px;
+  }
+
+  nav div#tabs a {
+    font-size: 20px;
+  }
+
+  div.start-item p {
+    font-size: 200%;
+    padding: 50px 2rem;
+  }
+
+  button {
+    font-size: 150%;
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    padding: 2rem;
+    height: 300px;
+  }
+
+  h1 {
+    font-size: 120px;
+    margin-top: 30px;
+  }
+
+  nav div#tabs a {
+    font-size: 20px;
+  }
+
+  div.start-item p {
+    font-size: 200%;
+    padding: 50px 2rem;
+  }
+
+  button {
+    font-size: 150%;
+    border: 1.5px solid grey;
+    border-radius: 10px;
+  }
+
+  div.start-item form {
+    width: 150px;
+  }
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+#playlists img {
+  border-radius: 0%;
+}
+
+body {
+  padding-bottom: 10px;
+}
+
+/* The alert message box */
+.alert {
+  padding: 20px;
+  background-color: #f44336; /* Red */
+  color: white;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 30px;
+}
+
+#firebaseui-auth-container {
+  position: relative;
+  left: -850px;
+  position: relative;
+  top: 80px;
+
+  float: right;
+  margin-top: -20px;
+ 
+}
